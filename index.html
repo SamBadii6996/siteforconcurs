@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>AgroStarVin</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+   		$window = $(window);
+		$('div[data-type="background"]').each(function(){
+     	var $bgobj = $(this);
+ 		$(window).scroll(function() {
+        var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+        var coords = '50% '+ yPos + 'px';
+        $bgobj.css({ backgroundPosition: coords });
+    			}); 
+ 			});    
+		}); 
+	</script>
+	<div class="header">
+		<div class="name"><a href="#">AgroStarVin</a></div>
+		<div class="headnomer">0-8800-5553-535</div>
+	</div>
+	<div class="mainbox">
+		<div class="paralaxbox" data-speed="5" data-type="background">
+			<div class="mainlogo">AgroStarVin</div>
+			<h2 class="podzagolovok">Від зерна до плоду</h2>
+		</div>
+		<h2 class="tovary">Товари</h2>
+		<p class="opis">Ми впевнені, що ви залишитеся задоволені продукцією компанії «AgroStarsVin». Ми використовуємо тільки якісну сировину і найсучасніші технології. Ознайомтеся з нашим каталогом. Якщо ви не змогли знайти необхідний Вам продукт, обов'язково зв'яжіться з нами. Наші фахівці із задоволенням проконсультують вас.</p>
+		<div class="onefon">
+			<p class="zal">Мінеральне добриво</p>
+			<p class="opistov">Створене на основі органічних речовин з додаванням азоту. Надає рослинам хороший імунітет від хвороб, та захищає від заморозків!
+
+			Ціна - 400грн 1 мішок(25кг)</p>
+		</div>
+		<div class="twofon">
+			<p class="zal">Земля</p>
+			<p class="opistov">Спеціально створена для клумб, городів, теплиць, садів, вазонів і т.д. З нею ви будете впевнені за своїх рослин! 
+
+			Ціна - 50 грн мішок (25кг)</p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="call">
+			<h4 class="callme">Як зв'язатися?</h4>
+			<p class="email">agrostarvin@gmail.com</p>
+			<p class="nom">0 8800 5553 535</p>
+			<p class="adress">Вінниця, вул.Пушкіна дом Колотушкіна</p>
+		</div>
+		<p class="names">AgroStarVin</p>
+		<p class="bySamBadii6996">©2020 AgroStarsVin. By SamBadii6996</p>
+
+	</div>
+	
+</body>
+</html>
